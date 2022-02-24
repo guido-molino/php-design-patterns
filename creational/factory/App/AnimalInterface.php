@@ -1,5 +1,5 @@
 <?php
-namespace creational\factory;
+namespace creational\factory\App;
 
 interface AnimalInterface {
     function getType();

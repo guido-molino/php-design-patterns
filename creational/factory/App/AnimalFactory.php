@@ -1,5 +1,5 @@
 <?php
-namespace creational\factory;
+namespace creational\factory\App;
 
 class AnimalFactory {
 
@@ -9,6 +9,8 @@ class AnimalFactory {
     {
         $namespace = 'creational\\factory\\Types\\';
         $class = $namespace . ucfirst($type);
+        echo "hellow";
+        require_once $class;
         return $this->animal = new $class();
     }
 }
