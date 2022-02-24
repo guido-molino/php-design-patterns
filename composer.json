@@ -1,0 +1,17 @@
+{
+  "name": "design-patterns",
+  "description": "A collection of samples.",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "Creational": "creational/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8"
+  }
+}
