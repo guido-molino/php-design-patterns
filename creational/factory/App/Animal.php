@@ -1,9 +1,11 @@
 <?php
-namespace creational\factory;
+namespace creational\factory\App;
+require_once "AnimalFactory.php";
 
 class Animal {
-    protected $sounds = array();
-    protected $bubbles = array();
+    protected $sounds;
+    protected $type;
+    protected $bubbles;
     protected $animal;
 
     public function __construct()
@@ -14,8 +16,13 @@ class Animal {
     public function type($type=null)
     {
         $animal = $this->animal->get($type);
-        $this->sounds[]=$animal->getSounds();
-        $this->bubbles[]=$animal->doesBubbles();
+        $this->sounds=$animal->getSounds();
+        $this->bubbles=$animal->doesBubbles();
+    }
+
+    public function getAnimalType()
+    {
+        return $this->type;
     }
 
     public function getAnimalSounds()

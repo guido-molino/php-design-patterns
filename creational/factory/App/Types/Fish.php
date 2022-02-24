@@ -1,7 +1,7 @@
 <?php
-namespace creational\factory\Types;
+namespace creational\factory\App\Types;
 
-use creational\factory\AnimalInterface;
+use creational\factory\App\AnimalInterface;
 
 class Fish implements AnimalInterface {
     protected $type = 'fish';
