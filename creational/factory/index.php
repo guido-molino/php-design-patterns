@@ -38,8 +38,6 @@ class Animal
 
 class AnimalFactory {
 
-    protected $animal;
-
     public function get($type=null)
     {
         if($type == 'fish')
